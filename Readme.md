@@ -14,3 +14,16 @@ Todo candidato precisará preencher os campos: CPF, Nome, Data Nascimento, Cep, 
 Integrar a página de formulário e o backend
 Disponibilizar uma API Rest com a funcionalidade de cadastro de candidatos armazenando em um banco de dados.
 Disponibilizar a documentação dos recursos Web Services REST - Uso do Swagger.
+
+
+
+
+
+<h1>Para executar o projeto será necessário instalar os seguintes programas:</h1>
+Visual Studio Code
+<br>
+Node.js
+  
+  
+  <h1>Agradecimentos</h1>
+  Agradeço a Gama Academy pela oportunidade e pelo intenso processo durante essas 5 semanas de Start Tech. Grata!
