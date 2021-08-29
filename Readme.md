@@ -1,4 +1,5 @@
-Projeto final treinamento Gama Start 
+<h1>Projeto final treinamento Gama Start</h1>
+  
 "A empresa JobsNET especialista em recrutamento e seleção de profissionais nas mais diversas áreas solicitou para a nossa fábrica de software desenvolver uma página para atração de profissionais para conectar as oportunidades de emprego".
 
 Objetivo: desenvolver uma landing page com formulário para preenchimento de candidatura
