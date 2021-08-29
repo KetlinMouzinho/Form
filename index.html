@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=initial-scale=1.0">
+        <script src="./Validador CEP.js" type='module' defer></script>
+        <script src="Validador CPF.js" type='module'></script>
+        <link rel="stylesheet" type="text/css" href="./formulario.css" media="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+    <title> JobsNET</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src= "Logo JobsNET.png" width="15%" alt="Logo JobsNET"/> 
+    </div>
+
+    <div id= "navbar"> 
+
+        <div> <a target = "_blank" href=""><p>Quem somos</p> </a></div> 
+       <div> <a target = "_blank" href="./Contato.html"><p>Contato</p> </a></div>
+       <div> <a target = "_blank" href="https://www.trabalho.df.gov.br/"><p>Vagas</p> </a></div>
+       <div> <a target= "_blank" href="./index.html"><p>Banco de Talentos</p> </a> </div>
+    </div>
+    </header>
+
+    <div> 
+        <h1 id= "titulo"> Banco de Talentos </h1>
+        <h3 id="subtitulo"><strong>Dados pessoais</strong></h3>
+        <br>
+    </div>
+
+    <form> 
+
+    <fieldset id="check"> 
+
+        <div class="campo" id="NomeCompleto"> 
+                <label for="nome"><strong>Nome completo *</strong> </label>
+                <input type="text" name="Nome Completo" id= "NomeCompleto" required> 
+        </div>
+
+
+        <div class="campo" id="DataDeNascimento"> 
+            <label for="DataDeNascimento"><strong>Data de Nascimento *</strong></label>
+            <input type="date"  name="DataDeNascimento"  id= "DataDeNascimento" required>
+            
+         </div>
+
+    <div class="form-group">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1"><strong>CPF</strong></span>
+            <input type="text" class="form-control" placeholder="Digite seu CPF"
+                aria-describedby="sizing-addon1" id= "cpf_digitado"> 
+    </div>
+        <small class="form-text">Digite somente números</small>
+
+<div class="container">
+<div id="success" class="alert alert-success" style="display: none;" role="alert">
+    <strong>CPF válido</strong>
+</div>
+
+<div id="error" class="alert alert-danger" style="display: none;" role="alert">
+    <strong>CPF inválido</strong>
+</div>
+</div>
+    
+    <div class="campo">
+        <label> <strong>Estado Civil</strong></label>
+        <select id="Estado Civil">
+            <option selected disable value ="">Selecione</option>
+           <option>Solteiro(a)</option>
+           <option>Casado(a)</option>
+           <option>Divorciado(a)</option>
+           <option>Viúvo(a)</option>
+        </select>
+    </div>
+
+        
+    <div class="campo">
+        <label> <strong>Sexo biológico</strong></label>
+        <select id="Sexo biológico">
+        <option selected disable value ="">Selecione</option>
+        <option>Feminino</option>
+        <option>Masculino</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label> <strong> Gênero</strong> </label>
+        <select id="Genero">
+            <option selected disable value ="">Selecione</option>
+           <option>Mulher Cis</option>
+           <option>Mulher Trans</option>
+           <option>Homem Cis</option>
+           <option>Homem Trans</option>
+           <option>Não binário</option>
+           <option>Prefiro não dizer</option>
+           <label>Outros</label>
+           <input type = "text" name = "Outros" id="Outros" placeholder="Outros...">
+        </select>
+    </div>
+
+    <div class="campo">
+        <label> <strong>Cargo Pretendido *</strong></label>
+        <input type="text" name="cargo Pretendido" id="cargo Pretendido"  required>
+    </div>
+
+    <div class="campo">
+        <div class="inputbox">
+            <label for="cep"> <strong> CEP *</strong></label>
+            <input type="text" id="cep"  required>
+            
+        </div>
+        <div class="inputbox">
+            <label for="endereco"> <strong> Endereço *</strong></label>
+            <input type="text" id="endereco"  required>
+            
+        </div>
+        <div class="inputbox">
+            <label for="numero"> <strong> Número</strong></label>
+             <input type="text" id="numero"  required>
+           
+        </div>
+        <div class="inputbox">
+            <label for="Complemento"> <strong> Complemento</strong></label>
+             <input type="text" id="Complemento"  required>
+        </div>
+    <div class="row">
+        <div class="inputbox">
+            <label for="bairro"><strong>Bairro</strong></label>
+            <input type="text" id="bairro"  required>
+            
+        </div>
+        <div class="inputbox">
+            <label for="cidade"><strong>Cidade</strong></label>
+            <input type="text" id="cidade"  required>
+            
+        </div>
+        <div class="inputbox">
+            <label for="estado"><strong>Estado</strong></label>
+            <input type="text" id="estado"  required>
+            
+        </div>
+    </div>
+
+    <div class= "campo"> 
+        <label><strong>Habilitação</strong></label>
+        <input type="radio" name="veiculo" value="Sim" checked>Sim
+        <input type="radio" name="veiculo" value="não" checked>Não  
+    </div>
+    <div class= "campo"> 
+        <label><strong>Categoria</strong> </label>
+        <select id="Categoria">
+            <option selected disable value ="">Selecione</option>
+               <option>A</option>
+               <option>B</option>
+               <option>C</option>
+               <option>D</option>
+               <option>E</option>
+            </select>
+    </div>
+
+    <div class= "campo"> 
+        <label><strong>Possui Veículo</strong></label>
+        <input type="radio" name="veiculo" value="Sim" checked>Sim
+        <input type="radio" name="veiculo" value="não" checked>Não  
+    </div>
+    
+    <div class="campo"> 
+        <label> <strong>Celular</strong> </label>
+        <input type="number" name="celular" id="celular" placeholder="(99) 999999999 " required> 
+    </div>
+    
+    <div class="campo"> 
+        <label for="email"> <strong> Email *</strong></label>
+        <input type="email" name="email" id="email" placeholder="myname@exemple.com" required> 
+    </div>
+
+    <div class= "botao">
+        <button class= "botao"  type="submit">Enviar</button>
+    </div>
+</fieldset>  
+    </form>
+</body>
+
+</html>
+
